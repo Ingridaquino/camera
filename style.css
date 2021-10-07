@@ -1,0 +1,124 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Vollkorn SC', serif;
+}
+
+p{
+    font-size: 20pxs;
+}
+
+a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2{
+    color: rgb(102, 19, 19);
+}
+/*fundo------------------
+---------------- */
+.fun{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -9999;
+    opacity: 0.15;
+}
+
+
+/*header - MENU ------------------
+---------------- */
+.header{
+    box-sizing: border-box;
+    background: rgb(185, 83, 97);
+    background: radial-gradient(circle, rgb(134, 10, 10) 0%, rgb(233, 172, 148) 80%);
+    opacity: 0.65;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header img{
+    width: 120px;
+    margin: 5px 80px;
+}
+
+.header .nave ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+/*Container - ------------------
+---------------- */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "histo histo histo"
+    "atua atua anuncio"
+    "footer footer footer"
+    ;
+
+}
+.container img{
+    width: 350px;  
+    -webkit-box-shadow: 9px 7px 5px rgb(50, 50, 50, 0.77);
+    -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow: 9px 7px 5px rgb(50, 50, 50, 0.77);
+}
+
+.histo{
+    text-align: center;
+    grid-area: histo;
+    margin: 20px 50px;
+    padding: 20px;
+}
+
+.atua{
+    text-align: center;
+    grid-area: atua;
+    margin: 50px;
+    padding: 20px;
+}
+
+/*anuncio - ------------------
+---------------- */
+.anuncio{
+    margin: 0 30px;
+    grid-area: anuncio;
+}
+
+.anuncio img{
+    width: 200px;
+}
+
+.img1{
+    margin-bottom: 35px;
+}
+
+/*footer - ------------------
+---------------- */
+
+.footer{
+    display: flex;
+    background: rgb(185, 83, 97);
+    background: radial-gradient(circle, rgb(134, 10, 10) 0%, rgb(233, 172, 148) 80%);
+    grid-area: footer;
+    width: 100%;
+    height: 50px;  
+    justify-content: center;
+}
+
+.footer p{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(192, 175, 192); 
+}
+
+
+
